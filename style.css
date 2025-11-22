@@ -173,39 +173,39 @@ footer {
     margin-top: 50px; 
 }
 .footer-content {
-    display: flex; /* Используем Flexbox */
-    justify-content: space-between; /* Распределяем элементы по краям */
-    align-items: center; /* Выравниваем элементы по вертикали */
-    max-width: 1200px; /* Ограничиваем ширину содержимого */
-    margin: 0 auto; /* Центрируем содержимое по горизонтали */
-    padding: 0 20px; /* Горизонтальные отступы по бокам */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
-/* Стили для ссылок на контакты */
+
 .contact-links a {
-    color: #ff4f4f; /* Красный цвет для ссылок */
+    color: #ff4f4f; 
     text-decoration: none;
-    margin-left: 20px; /* Отступ между ссылками */
+    margin-left: 20px; 
     font-size: 18px;
     transition: color 0.2s ease;
 }
 
 .contact-links a:hover {
-    color: #ffffff; /* Белый цвет при наведении */
+    color: #ffffff; 
     text-decoration: underline;
 }
 
-/* Стили для копирайта */
+
 footer p {
     margin: 0;
     font-size: 14px;
     color: #aaaaaa;
 }
 
-/* Адаптация для мобильных устройств (если нужно) */
+
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* На маленьких экранах элементы будут друг под другом */
+        flex-direction: column; 
     }
     .contact-links {
         margin-top: 10px;
