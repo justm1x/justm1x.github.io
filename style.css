@@ -29,7 +29,7 @@ p {
     font-size: 20px;
     line-height: 1.6;
     width: auto; 
-    margin: 10px 30; 
+    margin: 10px 30px; 
     text-align: left;
 }
 
@@ -137,4 +137,80 @@ li {
     border-radius: 8px;
     margin-top: 10px;
     border: 3px solid #ff4f4f00; 
+}
+.neighbours-row {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start;
+    width: 90%; 
+    margin: 30px auto;
+    padding: 10px 0;
+}
+.neighbours {
+    background: #1a1a1a;
+    width: 60%; 
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.25);
+    text-align: center; 
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.neighbours h3 {
+    text-align: center;
+    color: #ff5c5c;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #111111; 
+    color: #cccccc;
+    padding: 20px 0; 
+    text-align: center;
+    border-top: 3px solid #ff4f4f; 
+    width: 100%; 
+    margin-top: 50px; 
+}
+.footer-content {
+    display: flex; /* Используем Flexbox */
+    justify-content: space-between; /* Распределяем элементы по краям */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    max-width: 1200px; /* Ограничиваем ширину содержимого */
+    margin: 0 auto; /* Центрируем содержимое по горизонтали */
+    padding: 0 20px; /* Горизонтальные отступы по бокам */
+}
+
+/* Стили для ссылок на контакты */
+.contact-links a {
+    color: #ff4f4f; /* Красный цвет для ссылок */
+    text-decoration: none;
+    margin-left: 20px; /* Отступ между ссылками */
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: #ffffff; /* Белый цвет при наведении */
+    text-decoration: underline;
+}
+
+/* Стили для копирайта */
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/* Адаптация для мобильных устройств (если нужно) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* На маленьких экранах элементы будут друг под другом */
+    }
+    .contact-links {
+        margin-top: 10px;
+    }
+    .contact-links a {
+        margin: 0 10px;
+    }
 }
